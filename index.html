@@ -1924,7 +1924,7 @@ body.view-mode-on #view-page-2.page2-graphical .stage-flow-detail .flow-value{fo
   display: flex; align-items: center; justify-content: center;
 }
 .icon-wrap img, .icon-wrap svg { 
-  width: 68px; height: 68px; object-fit: contain;
+  width: 42px; height: 42px; object-fit: contain;
   mix-blend-mode: multiply;
   filter: contrast(1.15) brightness(1.05);
 }
@@ -3189,7 +3189,7 @@ body.view-mode-on #view-page-2.page2-graphical .stage-v72-flow b{font-size:10px!
       </div>
       <div style="flex:1; position:relative; overflow-x:auto; overflow-y:hidden; -webkit-overflow-scrolling:touch;">
         <div class="board-2d" id="board-2d">
-          <div class="vf-large-header" style="position:absolute; top: 12px; left: 50%; transform: translateX(-50%); font-size: 22px; font-weight: 900; color: #0f172a; letter-spacing: 1px; z-index: 10; text-transform: uppercase; text-shadow: 0 2px 10px rgba(255,255,255,0.8);">Virtual Factory - Department Summary</div>
+          <div class="vf-large-header" style="position:absolute; top: 2px; left: 50%; transform: translateX(-50%); font-size: 22px; font-weight: 900; color: #0f172a; letter-spacing: 1px; z-index: 10; text-transform: uppercase; text-shadow: 0 2px 10px rgba(255,255,255,0.8);">Virtual Factory - Department Summary</div>
           <svg class="paths-2d" id="paths-2d"></svg>
         </div>
       </div>
@@ -4817,7 +4817,7 @@ function headNameForDept(dept){
 }
 function fakeHeadSvg(dept){
   if (dept && dept.includes('Laser Cutting')) {
-    return `<img src="assets/laser%20cutting.jpeg" style="width:100%; height:100%; object-fit:cover; border-radius:10px" alt="Department Head" />`;
+    return `<img src="https://images.unsplash.com/photo-1563821035074-129031d2cb37?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" style="width:100%; height:100%; object-fit:cover; border-radius:10px" alt="Department Head" />`;
   }
   const initials=deptInitials(dept);
   const palettes=[['#dbeafe','#1d4ed8','#111827'],['#ccfbf1','#0f766e','#111827'],['#fef3c7','#d97706','#111827'],['#ede9fe','#7c3aed','#111827'],['#fee2e2','#dc2626','#111827']];
@@ -6606,29 +6606,29 @@ function initFlowchart2D() {
     ];
 
     const nodeIcons = {
-      1: 'assets/icons/icon_clipboard_1781078079269.png',
-      2: 'assets/icons/icon_scanning_machine_1781078102812.png', // camera/scanner
-      3: 'assets/icons/icon_worker_computer_1781078089197.png', // dna
-      4: 'assets/icons/icon_scanning_machine_1781078102812.png', // galaxy scanner
-      5: 'assets/icons/icon_vault_safe_1781078136643.png', // central stock
-      6: 'assets/icons/icon_factory_building_1781078112857.png', // sdt
-      7: 'assets/icons/icon_worker_computer_1781078089197.png', // qc
-      8: 'assets/icons/icon_worker_computer_1781078089197.png', // fpsc
-      9: 'assets/icons/icon_checker_loupe_1781077487862.png', // checker
-      "SB": 'assets/icons/icon_vault_safe_1781078136643.png', // stone bank
-      10: 'assets/icons/icon_laser_machine_1781078124171.png', // laser cutting
-      11: 'assets/icons/icon_xray_machine_1781078147256.png', // xray
-      12: 'assets/icons/icon_xray_machine_1781078147256.png', // xray semipolish
-      13: 'assets/icons/icon_polishing_wheel_1781077451514.png', // round galahad
-      14: 'assets/icons/icon_checker_loupe_1781077487862.png', // fancy manual
-      15: 'assets/icons/icon_checker_loupe_1781077487862.png', // round manual
-      16: 'assets/icons/icon_worker_computer_1781078089197.png', // mfg services
-      17: 'assets/icons/icon_checker_loupe_1781077487862.png', // tops dept
-      18: 'assets/icons/icon_xray_machine_1781078147256.png', // diamond lab
-      19: 'assets/icons/icon_scanning_machine_1781078102812.png', // dna
-      20: 'assets/icons/icon_delivery_truck_1781077507430.png' // kgho dispatch
+      1: 'https://img.icons8.com/color/48/clipboard.png',
+      2: 'https://img.icons8.com/color/48/barcode-scanner.png', // camera/scanner
+      3: 'https://img.icons8.com/color/48/workstation.png', // dna
+      4: 'https://img.icons8.com/color/48/scanner.png', // galaxy scanner
+      5: 'https://img.icons8.com/color/48/safe.png', // central stock
+      6: 'https://img.icons8.com/color/48/factory.png', // sdt
+      7: 'https://img.icons8.com/color/48/approval.png', // qc
+      8: 'https://img.icons8.com/color/48/workstation.png', // fpsc
+      9: 'https://img.icons8.com/color/48/search.png', // checker
+      "SB": 'https://img.icons8.com/color/48/safe.png', // stone bank
+      10: 'https://img.icons8.com/color/48/laser-beam.png', // laser cutting
+      11: 'https://img.icons8.com/color/48/microscope.png', // xray
+      12: 'https://img.icons8.com/color/48/microscope.png', // xray semipolish
+      13: 'https://img.icons8.com/color/48/settings--v1.png', // round galahad
+      14: 'https://img.icons8.com/color/48/search.png', // fancy manual
+      15: 'https://img.icons8.com/color/48/search.png', // round manual
+      16: 'https://img.icons8.com/color/48/workstation.png', // mfg services
+      17: 'https://img.icons8.com/color/48/search.png', // tops dept
+      18: 'https://img.icons8.com/color/48/microscope.png', // diamond lab
+      19: 'https://img.icons8.com/color/48/scanner.png', // dna
+      20: 'https://img.icons8.com/color/48/truck.png' // kgho dispatch
     };
-    const fallbackIcon = 'assets/icons/icon_factory_building_1781078112857.png';
+    const fallbackIcon = 'https://img.icons8.com/color/48/factory.png';
 
     const board = document.getElementById('board-2d');
     const svg = document.getElementById('paths-2d');
@@ -6742,15 +6742,15 @@ function initFlowchart2D() {
         } else if (e.pathType === 'split') {
             d = `M ${p1.x} ${p1.y + offY} L ${p1.x} ${p1.y + offY + 20} L ${p2.x} ${p1.y + offY + 20} L ${p2.x} ${p2.y - offY - 5}`;
         } else if (e.pathType === 'L-right') {
-            d = `M ${p1.x} ${p1.y + offY} L ${p1.x} ${p2.y} L ${p2.x - offX - 5} ${p2.y}`;
+            d = `M ${p1.x} ${p1.y + offY} L ${p1.x} ${p2.y - 15} L ${p2.x - offX - 5} ${p2.y - 15}`;
         } else if (e.pathType === 'up-right') {
-            d = `M ${p1.x + offX} ${p1.y} L ${p1.x + offX + 15} ${p1.y} L ${p1.x + offX + 15} ${p2.y} L ${p2.x - offX - 5} ${p2.y}`;
+            d = `M ${p1.x + offX} ${p1.y} L ${p1.x + offX + 15} ${p1.y} L ${p1.x + offX + 15} ${p2.y + 15} L ${p2.x - offX - 5} ${p2.y + 15}`;
         } else if (e.pathType === 'L-left') {
             d = `M ${p1.x} ${p1.y + offY} L ${p1.x} ${p2.y} L ${p2.x + offX + 5} ${p2.y}`;
         } else if (e.pathType === 'snake-down-long') {
-            d = `M ${p1.x} ${p1.y + offY} L ${p1.x} ${p2.y} L ${p2.x + offX + 5} ${p2.y}`;
+            d = `M ${p1.x} ${p1.y + offY} L ${p1.x} ${p2.y + 15} L ${p2.x + offX + 5} ${p2.y + 15}`;
         } else if (e.pathType === 'bypass-right') {
-            d = `M ${p1.x + offX} ${p1.y} L ${p1.x + offX + 25} ${p1.y} L ${p1.x + offX + 25} ${p2.y} L ${p2.x + offX + 5} ${p2.y}`;
+            d = `M ${p1.x + offX} ${p1.y} L ${p1.x + offX + 25} ${p1.y} L ${p1.x + offX + 25} ${p2.y - 15} L ${p2.x + offX + 5} ${p2.y - 15}`;
         } else {
             if (Math.abs(p1.y - p2.y) < 20) { 
                 d = `M ${p1.x + offX} ${p1.y} L ${p2.x - offX - 5} ${p2.y}`;
