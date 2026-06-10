@@ -1158,7 +1158,7 @@ body.view-mode-on #view-page-1A.view-page-active{display:block!important}
 body.view-mode-on #view-page-1A .card{min-height:0!important}
 body.view-mode-on #view-page-1A .card-h, body.view-mode-on #view-page-1A .vf-large-header{display:none!important}
 body.view-mode-on #view-page-1A .card > div:nth-child(2){overflow:hidden!important}
-body.view-mode-on #view-page-1A #board-2d{transform:scale(0.94);transform-origin:top center;margin-top:5px}
+body.view-mode-on #view-page-1A #board-2d{margin-top:5px}
 body.view-mode-on #view-page-2.view-page-active{display:grid!important}
 body.view-mode-on #view-page-3.view-page-active{display:flex!important}
 body.view-mode-on #view-page-4.view-page-active{display:grid!important}
@@ -3675,10 +3675,40 @@ function clearActiveViewPage(){
   getViewPages().forEach(p=>p.classList.remove('view-page-active'));
   document.body.removeAttribute('data-view-page');
 }
+function fitBoard2D() {
+  const board = document.getElementById('board-2d');
+  if (!board) return;
+  if (!document.body.classList.contains('view-mode-on')) {
+    board.style.transform = '';
+    board.style.marginTop = '';
+    return;
+  }
+  const container = board.parentElement;
+  if (!container) return;
+  
+  const cw = container.clientWidth;
+  const ch = container.clientHeight;
+  if (cw === 0 || ch === 0) return;
+  
+  const bw = 1150;
+  const bh = 660;
+  
+  const scaleW = cw / bw;
+  const scaleH = ch / bh;
+  let scale = Math.min(scaleW, scaleH) * 0.98;
+  if (scale > 1.25) scale = 1.25;
+  
+  board.style.transform = `scale(${scale})`;
+  board.style.transformOrigin = 'top center';
+  board.style.marginTop = '10px';
+}
+window.addEventListener('resize', fitBoard2D);
+
 function refreshViewModeSizing(){
   const kpi=document.getElementById('kpi-strip');
   const kh=kpi?kpi.offsetHeight:0;
   document.documentElement.style.setProperty('--kpi-h',kh+'px');
+  fitBoard2D();
 }
 function setViewButton(active){
   const b=document.getElementById('view-mode-btn');
