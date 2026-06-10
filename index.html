@@ -1829,7 +1829,7 @@ body.view-mode-on #view-page-2.page2-graphical .stage-flow-detail .flow-value{fo
   position: relative;
   width: 100%;
   min-width: 1200px;
-  height: 690px;
+  height: 710px;
   background: #f8fafc;
   background-image: radial-gradient(#e2e8f0 1px, transparent 1px);
   background-size: 20px 20px;
@@ -3691,7 +3691,7 @@ function fitBoard2D() {
   if (cw === 0 || ch === 0) return;
   
   const bw = 1200;
-  const bh = 690;
+  const bh = 710;
   
   const scaleW = cw / bw;
   const scaleH = ch / bh;
@@ -6553,33 +6553,33 @@ body.view-mode-on #view-page-2.page2-graphical .stage-v73-right b{font-size:10.2
 function initFlowchart2D() {
     // Compressed Y coordinates to fit cleanly within 8% to 90%
     const nodes = [
-      { id: 1, label: "Surat Lot Creation", x: 15, y: 10, dept: "surat Lot Creation", borderColor: "#3b82f6", badgeColor: "#3b82f6" },
-      { id: 2, label: "Digital Imaging", x: 32, y: 10, dept: "Digital Imaging", borderColor: "#0284c7", badgeColor: "#0284c7" },
-      { id: 3, label: "DNA", x: 50, y: 10, dept: "Facet DNA Stock Control", borderColor: "#0d9488", badgeColor: "#0d9488" },
-      { id: 4, label: "Galaxy Scanning", x: 68, y: 10, dept: "Galaxy Scanning", borderColor: "#4f46e5", badgeColor: "#4f46e5" },
-      { id: 5, label: "Central Stock Control", x: 85, y: 10, dept: "Facet Planning Stock Control", borderColor: "#0f766e", badgeColor: "#0f766e" },
+      { id: 1, label: "Surat Lot Creation", x: 15, y: 14, dept: "surat Lot Creation", borderColor: "#3b82f6", badgeColor: "#3b82f6" },
+      { id: 2, label: "Digital Imaging", x: 32, y: 14, dept: "Digital Imaging", borderColor: "#0284c7", badgeColor: "#0284c7" },
+      { id: 3, label: "DNA", x: 50, y: 14, dept: "Facet DNA Stock Control", borderColor: "#0d9488", badgeColor: "#0d9488" },
+      { id: 4, label: "Galaxy Scanning", x: 68, y: 14, dept: "Galaxy Scanning", borderColor: "#4f46e5", badgeColor: "#4f46e5" },
+      { id: 5, label: "Central Stock Control", x: 85, y: 14, dept: "Facet Planning Stock Control", borderColor: "#0f766e", badgeColor: "#0f766e" },
       
-      { id: 6, label: "Diamond Scanning (SDT)", x: 15, y: 25, dept: "Diamond Scanning (SDT)", borderColor: "#2563eb", badgeColor: "#2563eb" },
-      { id: 7, label: "QC", x: 32, y: 25, dept: "QC", borderColor: "#059669", badgeColor: "#059669" },
-      { id: 8, label: "FPSC", x: 50, y: 25, dept: "Facet Planning Stock Control", borderColor: "#16a34a", badgeColor: "#16a34a" },
-      { id: 9, label: "Checker", x: 68, y: 25, dept: "Checker", borderColor: "#4338ca", badgeColor: "#4338ca" },
-      { id: "SB", label: "Stone Bank", x: 90, y: 25, dept: "surat Rough Stone Bank", badgeColor: "#059669", borderColor: "#059669" },
+      { id: 6, label: "Diamond Scanning (SDT)", x: 15, y: 29, dept: "Diamond Scanning (SDT)", borderColor: "#2563eb", badgeColor: "#2563eb" },
+      { id: 7, label: "QC", x: 32, y: 29, dept: "QC", borderColor: "#059669", badgeColor: "#059669" },
+      { id: 8, label: "FPSC", x: 50, y: 29, dept: "Facet Planning Stock Control", borderColor: "#16a34a", badgeColor: "#16a34a" },
+      { id: 9, label: "Checker", x: 68, y: 29, dept: "Checker", borderColor: "#4338ca", badgeColor: "#4338ca" },
+      { id: "SB", label: "Stone Bank", x: 90, y: 29, dept: "surat Rough Stone Bank", badgeColor: "#059669", borderColor: "#059669" },
       
-      { id: 10, label: "Laser Cutting", x: 50, y: 40, dept: "Laser Cutting Department", borderColor: "#ea580c", badgeColor: "#ea580c" },
+      { id: 10, label: "Laser Cutting", x: 50, y: 44, dept: "Laser Cutting Department", borderColor: "#ea580c", badgeColor: "#ea580c" },
       
-      { id: 11, label: "X-Ray Dept", x: 15, y: 55, dept: "X-Ray Department", borderColor: "#2563eb", badgeColor: "#2563eb" },
-      { id: 14, label: "Fancy Manual", x: 32, y: 55, dept: "Fancy Manual Department", borderColor: "#db2777", badgeColor: "#db2777" },
-      { id: 15, label: "Round Manual", x: 50, y: 55, dept: "Round Manual", borderColor: "#ea580c", badgeColor: "#ea580c" },
-      { id: 16, label: "MFG Services", x: 68, y: 55, dept: "Anycut Galahad", borderColor: "#0d9488", badgeColor: "#0d9488" },
-      { id: 17, label: "Tops Dept", x: 85, y: 55, dept: "Diamond Lab", borderColor: "#16a34a", badgeColor: "#16a34a" },
+      { id: 11, label: "X-Ray Dept", x: 15, y: 59, dept: "X-Ray Department", borderColor: "#2563eb", badgeColor: "#2563eb" },
+      { id: 14, label: "Fancy Manual", x: 32, y: 59, dept: "Fancy Manual Department", borderColor: "#db2777", badgeColor: "#db2777" },
+      { id: 15, label: "Round Manual", x: 50, y: 59, dept: "Round Manual", borderColor: "#ea580c", badgeColor: "#ea580c" },
+      { id: 16, label: "MFG Services", x: 68, y: 59, dept: "Anycut Galahad", borderColor: "#0d9488", badgeColor: "#0d9488" },
+      { id: 17, label: "Tops Dept", x: 85, y: 59, dept: "Diamond Lab", borderColor: "#16a34a", badgeColor: "#16a34a" },
       
-      { id: 12, label: "X-Ray Semipolish", x: 15, y: 68, dept: "X-Ray Semi-Polish", borderColor: "#2563eb", badgeColor: "#2563eb" },
-      { id: 18, label: "Diamond Lab", x: 50, y: 68, dept: "Diamond Lab", borderColor: "#7c3aed", badgeColor: "#7c3aed" },
+      { id: 12, label: "X-Ray Semipolish", x: 15, y: 72, dept: "X-Ray Semi-Polish", borderColor: "#2563eb", badgeColor: "#2563eb" },
+      { id: 18, label: "Diamond Lab", x: 50, y: 72, dept: "Diamond Lab", borderColor: "#7c3aed", badgeColor: "#7c3aed" },
       
-      { id: 13, label: "Round Galahad", x: 15, y: 81, dept: "Round Galahad", borderColor: "#2563eb", badgeColor: "#2563eb" },
-      { id: 19, label: "DNA", x: 50, y: 81, dept: "Facet DNA Stock Control", borderColor: "#7c3aed", badgeColor: "#7c3aed" },
+      { id: 13, label: "Round Galahad", x: 15, y: 85, dept: "Round Galahad", borderColor: "#2563eb", badgeColor: "#2563eb" },
+      { id: 19, label: "DNA", x: 50, y: 85, dept: "Facet DNA Stock Control", borderColor: "#7c3aed", badgeColor: "#7c3aed" },
       
-      { id: 20, label: "KGHO Dispatch", x: 50, y: 94, dept: "KGHO Dispatch", borderColor: "#10b981", badgeColor: "#10b981" }
+      { id: 20, label: "KGHO Dispatch", x: 50, y: 98, dept: "KGHO Dispatch", borderColor: "#10b981", badgeColor: "#10b981" }
     ];
 
     const edges = [
